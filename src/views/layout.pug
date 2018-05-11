@@ -1,0 +1,37 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title #{title}
+    //- <link rel="shortcut  icon" type="image/x-icon" href="/images/favicon.ico" media="screen"  />
+    include ./includes/head
+  body
+    .top_bar
+      i.fa.fa-star
+      p.top_bar_p 程氏星辉 &nbsp;&nbsp;&nbsp;&nbsp;
+      i.fa.fa-star
+      //- input(type="text", name="" class="chrch" placeholder="搜索商品")
+    .swiper-container
+      .swiper-wrapper
+        .swiper-slide
+          img(src="/images/banner-1.png", alt="")
+        .swiper-slide
+          img(src="/images/banner-2.png", alt="")
+        .swiper-slide
+          img(src="/images/banner-3.png", alt="")
+        .swiper-slide
+          img(src="/images/banner-4.png", alt="")
+      .swiper-pagination
+      .swiper-scrollbar
+    script(src="/js/swiper.min.js")
+    script.
+      var mySwiper = new Swiper('.swiper-container', {
+        autoplay: true,
+        pagination: '.swiper-pagination',
+        scrollbar: '.swiper-scrollbar',
+      })
+    block content
+    .footer
+      .footera
+        a(href = "http://www.chengshixinghui.com/" target="_blank") @2018 程氏星辉

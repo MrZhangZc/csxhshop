@@ -1,0 +1,30 @@
+extends ../layout
+
+block content
+  .container-fluid
+      ul
+        li.nav
+          a.nava(href='/').active
+            i.fa.fa-ticket
+            | &nbsp;票务
+        li.nav
+          a.nava(href='/discount') 
+            i.fa.fa-cart-arrow-down
+            | &nbsp;优惠
+        li.nav
+          a.nava(href='/money')
+            i.fa.fa-money
+            | &nbsp;珠宝
+        li.nav
+          a.nava(href='/cutlery') 
+            i.fa.fa-cutlery
+            | &nbsp;食材
+  .container
+    each tik in tickets
+      .ticket
+        .img
+          a(href = "/ticket/" + tik._id)
+            img( src = tik.imgUrl , alt = tik.name )
+        p(class='name') #{tik.name}
+        p(class='olePrice') 原价：￥ #{tik.olePrice}
+        p(class='newPrice') 现价：￥ #{tik.newPrice}

@@ -1,0 +1,23 @@
+/*reset css*/
+* {margin: 0;padding: 0;}
+ul li {list-style: none;}
+a {text-decoration: none;cursor: pointer;}
+body {font: normal 100% Helvetica, Arial, sans-serif;background-color: #FEFEFE;width: 100%;height: 100%;}/*reset css*/
+/*ticket save*/
+.form {display: flex;flex-direction: column;margin-right: 50%;margin-top: 2em;}
+lable {margin-bottom: 1.5em;font-size: 1em;text-align: left;}
+.fla {position: absolute;left: 24%;}
+input {width: 19em;height: 2.2em;line-height: 2.2em;font-size: 0.6em;}
+.btn {width: 10em;height: 4em;margin-left: 50%;font-size: 1em;background-color: red;}
+/*golab css*/
+html,body,.container-fluid {height: 100%;}
+.top_bar{width: 100%;height: 3.5em;background-color: #222222;}
+.top_bar p {color: white;line-height: 3.5em;margin-left: 2em;font-weight: bold;}
+.container-fluid {width: 30%;background-color: #F5F5F5;float: left;}
+.nav {line-height: 2em;margin-top: 2em;width: 150px;height: 30px;}
+.nava {width: 100px;height: 30px;border: 1px solid #000;display: inline-block;margin-left: 5px;}
+.active {background-color: pink;}
+/*list css*/
+table {width: 70%;border: 1px solid #ccc;margin: 5em auto;}
+tbody {border: 1px solid #ccc;box-sizing: border-box;}
+th,tr,td {text-align: center;border: 1px solid #ccc;height: 2em;background-color: #CFF;}

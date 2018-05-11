@@ -1,0 +1,24 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title #{title}
+    <link rel="shortcut  icon" type="image/x-icon" href="/images/favicon.ico" media="screen"  />
+    link(rel="stylesheet", href="/css/specific.css")
+  body
+    .top_bar
+      p.top_bar_p 程氏星辉 &nbsp;&nbsp;&nbsp;&nbsp;
+    .container
+      img( src = ticket.imgUrl , alt = ticket.name )
+      p(class='name')  #{ticket.name}
+      p(class='summery') 简介 ： #{ticket.summery}
+      p(class='place') 演出地址 ： #{ticket.place}
+      p(class='date') 演出日期 ： #{ticket.date}
+      p(class='time') 演出时间 ： #{ticket.time}
+      p(class='olePrice') 原价 ：￥ #{ticket.olePrice}
+      p(class='newPrice') 现价 ：￥ #{ticket.newPrice}
+      p(class='getTicket') 取票地址 ： #{ticket.getTicket}
+      p(class='phone') 联系方式 ： #{ticket.phone}
+      p(class='explain')  #{ticket.explain}
+

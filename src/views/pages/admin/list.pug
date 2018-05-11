@@ -1,0 +1,19 @@
+extends ../../layout_admin
+
+block content
+  .container
+    table
+      thead
+        tr
+          th 票务名称
+          th 查看
+          //- th 更新
+          th 删除
+      tbody
+      each tik in tickets
+        tr
+          td #{tik.name}
+          td: a(href='../ticket/' + tik._id) 查看
+          //- td: a(target="_blank", href='../admin/update/' + item._id) 修改
+          td
+            a(href="/admin/ticket/delete/" + tik._id,) 删除

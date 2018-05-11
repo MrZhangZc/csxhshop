@@ -1,0 +1,38 @@
+body{
+    background-color: #FEFEFE;
+    width: 100%;
+    height: 100%;
+}
+
+.top_bar{
+    width: 100%;
+    height: 3.5em;
+    line-height: 3.5em;
+    background-color:#FEFEFE;
+    text-align: center;
+}
+
+.container img{
+    width: 100%;
+    height: 300px;
+}
+
+.container .name {
+    color: #535353;
+    font-size: 1.2em;
+}
+
+.container .summery,
+.place,
+.explain {
+    color: #A4A4A4;
+}
+.container .date, .time{
+    color: #535353;
+}
+
+.container .newPrice{
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #B42C23;
+}

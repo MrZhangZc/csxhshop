@@ -1,0 +1,22 @@
+extends ../layout
+
+block content
+  .container-fluid
+      ul
+        li.nav
+          a.nava(href='/')
+            i.fa.fa-ticket
+            | &nbsp;票务
+        li.nav
+          a.nava(href='/discount')
+            i.fa.fa-cart-arrow-down
+            | &nbsp;优惠
+        li.nav
+          a.nava(href='/money')
+            i.fa.fa-money
+            | &nbsp;珠宝
+        li.nav
+          a.nava(href='/cutlery').active
+            i.fa.fa-cutlery
+            | &nbsp;食材
+  .container

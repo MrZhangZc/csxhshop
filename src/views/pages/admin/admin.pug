@@ -1,0 +1,26 @@
+extends ../../layout_admin
+
+block content
+  .container
+    form.form(method="post", action="/admin/ticket/new")
+      //- if ticket._id
+      //-   input(type="hidden", name="ticket[_id]", value= ticket._id)
+      lable(for="inputName") 演出名称
+        input#inputName(type="text", name="ticket[name]", value= ticket.name)
+      lable(for="inputImage") 图片地址
+        input#inputImage(type="text", name="ticket[imgUrl]", value= ticket.imgUrl)
+      lable(for="inputPlace") 演出地址
+        input#inputPlace(type="text", name="ticket[place]", value= ticket.place)
+      lable(for="inputOldPrice") 原价
+        input#inputOldPrice(type="text", name="ticket[olePrice]", value= ticket.olePrice)
+      lable(for="inputNewPrice") 现价
+        input#inputNewPrice(type="text", name="ticket[newPrice]", value= ticket.newPrice)
+      lable(for="inputDate") 演出日期
+        input#inputDate(type="text", name="ticket[date]", value= ticket.date)
+      lable(for="inputTime") 演出时间
+        input#inputTime(type="text", name="ticket[time]", value= ticket.time)
+      lable(for="inputGetTicket") 取票地址
+        input#inputGetTicket(type="text", name="ticket[getTicket]", value= ticket.getTicket)
+      lable(for="inputSummery") 简介
+        input#inputSummery(type="text", name="ticket[summery]", value= ticket.summery)
+      button.btn(type="submit") 录入
